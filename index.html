@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Songdo Times — A Monthly City Magazine</title>
+<meta name="description" content="A monthly city magazine about Songdo, Incheon — written in English by the students who live here.">
+<meta property="og:title" content="Songdo Times">
+<meta property="og:description" content="A monthly city magazine about Songdo, written by its students.">
+<meta property="og:image" content="https://www.songdotimes.com/images/sep-c-3.jpg">
+<meta property="og:url" content="https://www.songdotimes.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,400&family=Libre+Caslon+Text:ital,wght@0,400;1,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead__top">
+      <span>Incheon &middot; Songdo</span>
+      <span><span class="dot">●</span> A monthly record of a city that keeps growing</span>
+      <span id="todayDate">Sun, May 31, 2026</span>
+    </div>
+    <div class="masthead__main">
+      <h1 class="wordmark" data-home>Songdo<span class="stripe"></span>Times</h1>
+      <div class="masthead__tag">Est. 2026 &mdash; A Monthly City Magazine</div>
+    </div>
+    <nav class="nav">
+      <a data-route="home">This Issue</a>
+      <a data-route="archive">Archive</a>
+      <a data-route="founder">Founder</a>
+      <a data-route="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  
+
+  <footer class="site-footer">
+    <div class="site-footer__in">
+      <div>
+        <div class="wordmark" data-home>Songdo<span class="stripe"></span>Times</div>
+        <div class="masthead__tag" style="margin-top:10px">One issue a month. Slowly, without skipping.</div>
+      </div>
+      <div class="foot-meta">
+        <a href="mailto:songdotimes@gmail.com">songdotimes@gmail.com</a><br>
+        <a href="tel:+8203228326506">032 832 6506</a><br>
+        Songdo-dong, Yeonsu-gu, Incheon<br>
+        <span style="opacity:.7">&copy; 2026 Songdo Times. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // live masthead date
+    (function(){
+      const d = new Date();
+      const el = document.getElementById('todayDate');
+      if(el) el.textContent = d.toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric' });
+    })();
+  </script>
+
+  <template id="__bundler_thumbnail">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="100" fill="#0c5c63"/>
+      <text x="50" y="44" font-family="Georgia, serif" font-size="13" fill="#fdfcf8" text-anchor="middle" font-style="italic">Songdo</text>
+      <text x="50" y="62" font-family="Georgia, serif" font-size="13" fill="#fdfcf8" text-anchor="middle">Times</text>
+    </svg>
+  </template>
+
+</body>
+</html>
