@@ -78,12 +78,12 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .masthead__top .dot{ color:var(--accent); font-size:8px; vertical-align:middle; }
 .masthead__main{
-  max-width:var(--maxw); margin:0 auto; padding:20px var(--gut) 16px;
-  display:flex; flex-direction:column; align-items:center; gap:9px; text-align:center;
+  max-width:var(--maxw); margin:0 auto; padding:12px var(--gut) 10px;
+  display:flex; flex-direction:column; align-items:center; gap:6px; text-align:center;
 }
 .wordmark{
   font-family:var(--serif); font-weight:400; letter-spacing:-.01em;
-  font-size:clamp(38px, 7.5vw, 82px); line-height:.9; cursor:pointer;
+  font-size:clamp(28px, 5vw, 52px); line-height:.95; cursor:pointer;
   display:flex; align-items:center; gap:.28em;
 }
 .wordmark .stripe{ width:1px; height:.7em; background:var(--accent); display:inline-block; }
