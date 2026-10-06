@@ -213,7 +213,7 @@ window.ARTICLES = [
       { p: "For ramen, I tried Samyang Carbo Buldak Bokkeum Myeon, Shin Ramyun, and a slim Cup-noodle. Each has a different mouthfeel, spice level, and flavor \u2014 some rich and creamy, others light and simple \u2014 so there's one for everyone." },
       { review: { img: "images/cvs-cupnoodle.jpg", name: "Noodle-Fit Cup-noodle", text: "The noodles are thin and a little clear; once boiled they tangle up, which can drive you a bit crazy. The taste is similar to normal ramen, but it has far fewer calories \u2014 so there's no guilt in eating it." } },
       { review: { img: "images/cvs-samyang.jpg", name: "Samyang Carbo Buldak Bokkeum Myeon", text: "It can be spicy for many, so it's better with cheese added \u2014 the creamy carbonara flavor balances the heat and makes it more enjoyable. The noodles are chewy and flavorful, which is why so many love it. It's gone popular well beyond Korea; if you enjoy spicy food, it's worth trying." } },
-      { review: { name: "Shin Ramyun", text: "Shin Ramyun is the standard \u2014 Korea's most popular instant noodle, often seen as the representative Korean ramen. The noodles are chewy and the broth has a strong taste that pairs well with vegetables, eggs, or other toppings." } },
+      { review: { img: "images/shin-ramyun.jpg", name: "Shin Ramyun", text: "Shin Ramyun is the standard \u2014 Korea's most popular instant noodle, often seen as the representative Korean ramen. The noodles are chewy and the broth has a strong taste that pairs well with vegetables, eggs, or other toppings." } },
       { h: "Three Addictive Snacks" },
       { p: "I tried Banana Kick, Marine Boy, and Posstick \u2014 all chips, each with its own crispiness and a different take on saltiness." },
       { review: { img: "images/cvs-posstick.jpg", name: "Posstick", text: "Possticks have a simple taste \u2014 fried potato, in a large size. If you're after a non-irritating snack, try it. It's lightly seasoned, so it's never overwhelming, and its crispy texture pairs well with all kinds of drinks." } },
@@ -250,6 +250,7 @@ window.ARTICLES = [
     title: "The Price of a Distant Strait",
     author: "Hannah Lee", org: "Songdo Times",
     date: "May 24, 2026", read: 5,
+    img: "images/gas-station-korea.jpg",
     photo: "Fuel prices on the rise \u2014 a global tension felt at the Songdo pump",
     dek: "Tension in the Strait of Hormuz sent oil prices climbing this spring \u2014 and the ripple reached all the way to a liter of milk, a teacher's commute, and a government relief fund.",
     body: [
